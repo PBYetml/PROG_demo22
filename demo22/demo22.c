@@ -19,15 +19,18 @@
 #include <math.h>
 
 //-- librairie perso --//
+#include "EnteteFctCalcul.h"
 
-//-- variable gloable --// #define PI2 3.14
-#define PI_2 3.14
 
-const double PI = 3.14;  
+
+//const double PI = 3.14;  
 const float FRACTION = 3.0 / 7.0;  // 0.429
 
 //-- prototype --// 
-float CalculerSurfaceCercle(float rayon); 
+
+
+
+
 
 
 
@@ -41,6 +44,10 @@ int main()
 
 	//- check taille variable --//
 	tailleVariable = sizeof(int); 
+
+	//appel de fct bidon 
+	FctBidon(); 
+
 
 	//appel de fonction -> CalculerSurfaceCercle
 	surfaceCercle_m2 = CalculerSurfaceCercle(rayon_m); 
@@ -61,20 +68,6 @@ int main()
 
 
 
-//---
-// nom fonction :						CalculerSurfaceCercle
-// paramètre entreée / sortie / inout :		rayon / surfaceCercle
-// description : calcul de la surface d'un cercle 
-// remarque : besoin d'une constante PI + lib math pour fct pow 
-// auteur : PBY 
-// date modification : 22.09.2022
-//---
-float CalculerSurfaceCercle(float rayon)
-{
-	// déclaration variable 
-	float surface;
 
-	surface = PI * pow(rayon, 2);
 
-	return surface;
-}
+
