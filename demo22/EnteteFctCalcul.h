@@ -20,6 +20,10 @@
 //-- variable gloable --// #define PI2 3.14
 #define PI 3.14
 
+// roue = 5 ; moteur = 1 ; nbPasager = 7 ; portes = 4 ; 
+typedef enum { moteur = 1, portes = 4, roues, nbpassager = 7 } e_voiture;
+
+
 //-- prototype --// 
 float CalculerSurfaceCercle(float rayon);
 

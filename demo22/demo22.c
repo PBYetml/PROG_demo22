@@ -21,18 +21,13 @@
 //-- librairie perso --//
 #include "EnteteFctCalcul.h"
 
-
-
 //const double PI = 3.14;  
 const float FRACTION = 3.0 / 7.0;  // 0.429
 
+//énumération 
+enum e_couleur {vert, violet = 0, bleu = 10, joseph = 10, rouge = 'r', noir = 100};
+
 //-- prototype --// 
-
-
-
-
-
-
 
 //-- déclaration de fonction 
 int main()
@@ -41,7 +36,29 @@ int main()
 	float  surfaceCercle_m2; 
 	int8_t rayon_m = 1, tailleVariable;  //uint8_t int16_t uint16_t ..
 	int valRetour = -1; 
+	int infoVoiture = 1; 
+	int moteur = 10; 
 
+	enum e_couleur maCouleur = violet; 
+	enum e_couleur deuxiemeCouleur = 1; 
+
+	e_voiture maVoiture = moteur; 
+
+	if (maCouleur == vert || maCouleur == violet)
+	{
+		printf("ma couleur est verte");
+	}
+	if (deuxiemeCouleur == violet)
+	{
+		printf("\nma couleur est violet");
+	}
+
+	if (maVoiture == moteur)
+	{
+		printf("\nma voiture comporte un moteur"); 
+	}
+
+	
 	//- check taille variable --//
 	tailleVariable = sizeof(int); 
 
